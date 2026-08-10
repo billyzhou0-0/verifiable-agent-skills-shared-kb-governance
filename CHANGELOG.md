@@ -2,28 +2,28 @@
 
 All notable changes to this project are documented here, following Keep a Changelog with semver versioning. / 本文件按 Keep a Changelog 规范记录本项目所有重要变更。
 
-> Versions 0.x document the real evolution of this methodology before open-sourcing (verified against internal git history, audit reports, and knowledge-base archives); 1.x documents the open-source release. / 0.x 记录开源前方法论的真实演进史（经内部存档核实）；1.x 记录开源发布。
-
 ## [1.0.0] - 2026-08-11
 
 ### Initial open-source release / 初始开源发布
 
-- 开源发布：通用化治理方法论 SKILL.md（去私有化）+ README（痛点故事+双语）+ MIT。/ 开源发布。
-## [0.3.0] - 2026-08-10
+- Rules for a knowledge base shared by multiple AIs and one human: directory contracts, naming rules, flow rules, sync obligation, evidence discipline - machine-checked on every commit. / 多 AI 共享知识库的治理规矩：目录契约、命名、流转、同步铁律、证据纪律——每次提交机器检查。
 
-### Pre-release (internal) / 开源前内部版本
+## Pre-release evolution（开源前演进史）
 
-- 机器检查体系：规矩体检.py + pre-commit 红绿灯（提交前自动体检）；SOUL.md/AGENTS.md 双镜像+承接文件（单一事实源）；敏感信息只报告不处理（用户判断）；审计报告不可变。/ 机器检查落地。
+Each fix below was proven in real production. / 以下每条修复均在真实生产中验证。
 
-## [0.2.0] - 2026-08-07
+### 1. 多 AI 共库默认混乱
 
-### Pre-release (internal) / 开源前内部版本
+- **Fix / 修复**：文件落错位、命名无意义、同步没人做、「完成」声称对不上现实。修复：目录分工契约（收件箱/ai暂存/待办/归档）+ 命名规矩（日期末尾无条件）+ 流转回写（✅已转交）+ 联动同步铁律（义务不是选项）。
 
-- 治理规则成形：目录分工契约（收件箱/ai暂存/待办/归档）、产出物归属规则、命名规矩（AI名-事项-日期，日期末尾无条件）、流转回写、联动同步铁律（KMS-003）。/ 治理规则成形。
+### 2. 纸面规矩不是强制
 
-## [0.1.0] - 2026-08-06
+- **Fix / 修复**：AI 不主动读文件、压缩后遗忘。修复：单一事实源（必读卡+自动注入镜像）+ 机器检查（体检脚本+提交前钩子）；归属按会话证据不凭感觉；「已落地」必须附可验证证据。
 
-### Pre-release (internal) / 开源前内部版本
+### 3. 敏感信息判断权错位
 
-- 共享 AI 知识资产库初建（init 提交 4470aee）：规则+原理+模板+登记册；shared-ai-memory 技能（13:40）。/ 共享库初建。
+- **Fix / 修复**：AI 自行判断敏感会双向误判（把示例当真、把真的当无害）。修复：敏感默认不写入，疑似停下问用户，用户明确同意才写，判断权在用户。
 
+### 4. 审计报告被随意修改
+
+- **Fix / 修复**：历史审计被改会破坏可信度。修复：审计报告一律不改（不止历史几份）；进行中审计非实质性修改先与用户商议。
