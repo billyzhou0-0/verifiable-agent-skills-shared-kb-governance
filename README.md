@@ -4,6 +4,14 @@
 
 When several AI agents (Hermes, Codex, Claude, Gemini) plus a human all read and write one Obsidian/Markdown knowledge base, chaos is the default: files land in the wrong place, names mean nothing, "done" claims don't match reality, and the human has to re-explain everything. This methodology is the operating system for that shared space.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/billyzhou0-0/verifiable-agent-skills-shared-kb-governance.svg)](https://github.com/billyzhou0-0/verifiable-agent-skills-shared-kb-governance/stargazers)
+## Why this exists（为什么做这个）
+
+One human + several AI agents + one shared knowledge base = chaos by default: files land in the wrong place, names mean nothing, sync never happens, and "done" claims don't match reality.
+
+This governance is the operating system for that shared space — directory contracts, naming rules, flow rules, sync obligations, and evidence discipline. And the rules are machine-checked on every commit, because written rules are not enforcement.
+
 ## The core insight
 
 **Rules written in files are not enforcement** — agents don't reliably read them, and compression makes them forget. So this governance is designed as:
